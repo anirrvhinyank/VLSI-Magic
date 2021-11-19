@@ -1,0 +1,54 @@
+* SPICE3 file created from newhalfadder.ext - technology: scmos
+
+.option scale=1u
+
+M1000 a_8_25# a vdd w_n1_23# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 sum a_8_n131# gnd Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 a_8_0# a gnd Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 sum a_44_n68# a_45_n106# w_36_n108# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 gnd b a_8_n131# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 a_44_n68# a_8_n43# vdd w_36_n52# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 vdd b a_8_n43# w_n1_n45# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 a_8_n43# b a_8_n68# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 a_8_25# b a_8_0# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 a_8_n106# a vdd w_n1_n108# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 gnd a_44_n68# sum Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 a_45_n106# a_8_n131# vdd w_36_n108# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 vdd b a_8_25# w_n1_23# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1013 carryout a_8_25# vdd w_34_16# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1014 carryout a_8_25# gnd Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1015 a_8_n131# b a_8_n106# w_n1_n108# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 a_8_n43# a vdd w_n1_n45# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 a_8_n131# a gnd Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1018 a_44_n68# a_8_n43# gnd Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 a_8_n68# a gnd Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 sum Gnd 9.19fF
+C1 a_8_n131# Gnd 13.95fF
+C2 a_44_n68# Gnd 18.57fF
+C3 a_8_n43# Gnd 13.16fF
+C4 gnd Gnd 63.17fF
+C5 carryout Gnd 2.26fF
+C6 a_8_25# Gnd 12.97fF
+C7 vdd Gnd 74.07fF
+C8 b Gnd 30.08fF
+C9 a Gnd 30.08fF

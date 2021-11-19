@@ -1,0 +1,77 @@
+timestamp 1635503028
+version 8.3
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "sum" 191 9192 45 -131 ndiff 72 34 40 26 44 30 0 0 0 0 0 0 188 102 0 0 0 0
+node "a_45_n106#" 67 0 45 -106 pdiff 0 0 72 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_8_n106#" 60 0 8 -106 pdiff 0 0 64 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_8_n131#" 592 13954 8 -131 ndiff 64 32 40 26 106 96 0 0 0 0 0 0 220 118 0 0 0 0
+node "a_8_n68#" 27 0 8 -68 ndiff 64 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_44_n68#" 1140 18572 44 -68 ndiff 40 26 40 26 176 176 0 0 0 0 0 0 116 66 0 0 0 0
+node "a_8_n43#" 547 13162 8 -43 pdiff 40 26 64 32 98 90 0 0 0 0 0 0 220 118 0 0 0 0
+node "a_8_0#" 27 0 8 0 ndiff 64 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "gnd" 852 63168 1 -131 ndiff 320 208 0 0 0 0 0 0 0 0 0 0 1568 792 0 0 0 0
+node "carryout" 138 2256 43 0 ndiff 40 26 40 26 0 0 0 0 0 0 0 0 104 60 0 0 0 0
+node "a_8_25#" 547 12974 8 25 pdiff 40 26 64 32 98 90 0 0 0 0 0 0 216 116 0 0 0 0
+node "vdd" 1898 74072 1 -106 pdiff 0 0 320 208 0 0 0 0 0 0 0 0 1888 952 0 0 0 0
+node "b" 2159 30078 16 -134 p 0 0 0 0 362 366 0 0 0 0 0 0 0 0 0 0 0 0
+node "a" 2159 30078 6 -134 p 0 0 0 0 362 366 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_36_n108#" 5638 0 36 -108 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 324 78
+node "w_n1_n108#" 5429 0 -1 -108 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 312 76
+node "w_36_n52#" 3132 0 36 -52 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 180 54
+node "w_n1_n45#" 5429 0 -1 -45 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 312 76
+node "w_34_16#" 3341 0 34 16 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192 56
+node "w_n1_23#" 5429 0 -1 23 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 312 76
+cap "b" "vdd" 720
+cap "w_36_n108#" "vdd" 376
+cap "w_n1_n45#" "vdd" 752
+cap "w_36_n108#" "sum" 376
+cap "w_n1_n45#" "a" 1272
+cap "w_n1_n45#" "b" 1272
+cap "a_44_n68#" "vdd" 240
+cap "a_8_n43#" "b" 240
+cap "a_44_n68#" "sum" 240
+cap "a_8_n43#" "w_n1_n45#" 376
+cap "a_44_n68#" "w_36_n108#" 1272
+cap "w_n1_n108#" "vdd" 376
+cap "carryout" "w_34_16#" 376
+cap "w_n1_n108#" "a" 1272
+cap "a_8_25#" "w_34_16#" 1272
+cap "w_n1_n108#" "b" 1272
+cap "a_8_n131#" "b" 240
+cap "w_n1_23#" "a_8_25#" 376
+cap "a_8_n131#" "w_36_n108#" 1272
+cap "vdd" "w_34_16#" 376
+cap "w_36_n52#" "vdd" 376
+cap "w_n1_23#" "vdd" 752
+cap "w_n1_23#" "a" 1272
+cap "a_8_n131#" "w_n1_n108#" 376
+cap "w_n1_23#" "b" 1272
+cap "a_8_25#" "b" 240
+cap "gnd" "a" 480
+cap "a_8_n43#" "w_36_n52#" 1272
+cap "gnd" "b" 480
+cap "w_36_n52#" "a_44_n68#" 376
+cap "a" "vdd" 720
+device mosfet nfet 54 -131 55 -130 2 8 "Gnd!" "a_44_n68#" 4 0 "sum" 8 0 "gnd" 8 0
+device mosfet nfet 43 -131 44 -130 2 8 "Gnd!" "a_8_n131#" 4 0 "gnd" 8 0 "sum" 8 0
+device mosfet nfet 16 -131 17 -130 2 8 "Gnd!" "b" 4 0 "a_8_n131#" 8 0 "gnd" 8 0
+device mosfet nfet 6 -131 7 -130 2 8 "Gnd!" "a" 4 0 "gnd" 8 0 "a_8_n131#" 8 0
+device mosfet pfet 54 -106 55 -105 2 8 "w_36_n108#" "a_44_n68#" 4 0 "a_45_n106#" 8 0 "sum" 8 0
+device mosfet pfet 43 -106 44 -105 2 8 "w_36_n108#" "a_8_n131#" 4 0 "vdd" 8 0 "a_45_n106#" 8 0
+device mosfet pfet 16 -106 17 -105 2 8 "w_n1_n108#" "b" 4 0 "a_8_n106#" 8 0 "a_8_n131#" 8 0
+device mosfet pfet 6 -106 7 -105 2 8 "w_n1_n108#" "a" 4 0 "vdd" 8 0 "a_8_n106#" 8 0
+device mosfet nfet 42 -68 43 -67 2 8 "Gnd!" "a_8_n43#" 4 0 "gnd" 8 0 "a_44_n68#" 8 0
+device mosfet nfet 16 -68 17 -67 2 8 "Gnd!" "b" 4 0 "a_8_n68#" 8 0 "a_8_n43#" 8 0
+device mosfet nfet 6 -68 7 -67 2 8 "Gnd!" "a" 4 0 "gnd" 8 0 "a_8_n68#" 8 0
+device mosfet pfet 42 -50 43 -49 2 8 "w_36_n52#" "a_8_n43#" 4 0 "vdd" 8 0 "a_44_n68#" 8 0
+device mosfet pfet 16 -43 17 -42 2 8 "w_n1_n45#" "b" 4 0 "a_8_n43#" 8 0 "vdd" 8 0
+device mosfet pfet 6 -43 7 -42 2 8 "w_n1_n45#" "a" 4 0 "vdd" 8 0 "a_8_n43#" 8 0
+device mosfet nfet 41 0 42 1 2 8 "Gnd!" "a_8_25#" 4 0 "gnd" 8 0 "carryout" 8 0
+device mosfet nfet 16 0 17 1 2 8 "Gnd!" "b" 4 0 "a_8_0#" 8 0 "a_8_25#" 8 0
+device mosfet nfet 6 0 7 1 2 8 "Gnd!" "a" 4 0 "gnd" 8 0 "a_8_0#" 8 0
+device mosfet pfet 41 18 42 19 2 8 "w_34_16#" "a_8_25#" 4 0 "vdd" 8 0 "carryout" 8 0
+device mosfet pfet 16 25 17 26 2 8 "w_n1_23#" "b" 4 0 "a_8_25#" 8 0 "vdd" 8 0
+device mosfet pfet 6 25 7 26 2 8 "w_n1_23#" "a" 4 0 "vdd" 8 0 "a_8_25#" 8 0

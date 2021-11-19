@@ -1,0 +1,26 @@
+| units: 100 tech: scmos format: MIT
+p vb vdd vbi 2 9 17 3
+n vbi va vout 2 9 -52 -32
+n vb vai vout 2 9 -29 -32
+n va gnd vai 2 9 -5 -32
+p vbi vai vout 2 9 -29 3
+p vb va vout 2 9 -52 3
+n vb gnd vbi 2 9 17 -32
+p va vdd vai 2 9 -5 3
+C w_n60_1# vb 2.54
+C w_n60_1# va 4.47
+C gnd GND 8.08
+R gnd 176
+C vdd GND 7.33
+R vdd 391
+C vai GND 19.74
+R vai 567
+C vout GND 14.85
+R vout 567
+C va GND 30.84
+R va 747
+C vb GND 37.76
+R vb 2291
+C vbi GND 76.85
+R vbi 3796
+R w_n60_1# 16577

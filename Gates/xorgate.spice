@@ -1,0 +1,29 @@
+* SPICE3 file created from xorgate.ext - technology: scmos
+
+.option scale=1u
+
+M1000 vbi vb vdd w_n60_1# pfet w=9 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 vout vbi va Gnd nfet w=9 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 vout vb vai Gnd nfet w=9 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 vai va gnd Gnd nfet w=9 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 vout vbi vai w_n60_1# pfet w=9 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 vout vb va w_n60_1# pfet w=9 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 vbi vb gnd Gnd nfet w=9 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 vai va vdd w_n60_1# pfet w=9 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 w_n60_1# va 4.47fF
+C1 w_n60_1# vb 2.54fF
+C2 gnd Gnd 8.08fF
+C3 vdd Gnd 7.33fF
+C4 vai Gnd 19.74fF
+C5 vout Gnd 14.85fF
+C6 va Gnd 30.84fF
+C7 vb Gnd 37.76fF
+C8 vbi Gnd 76.85fF

@@ -1,0 +1,22 @@
+* SPICE3 file created from ORtry.ext - technology: scmos
+
+.option scale=1u
+
+M1000 out b a_4_n3# w_n8_n5# pfet w=9 l=3
++  ad=0 pd=0 as=0 ps=0
+M1001 out a gnd Gnd nfet w=9 l=3
++  ad=0 pd=0 as=0 ps=0
+M1002 gnd b out Gnd nfet w=9 l=3
++  ad=0 pd=0 as=0 ps=0
+M1003 out2 out gnd Gnd nfet w=9 l=3
++  ad=0 pd=0 as=0 ps=0
+M1004 a_4_n3# a Vdd w_n8_n5# pfet w=9 l=3
++  ad=0 pd=0 as=0 ps=0
+M1005 out2 out Vdd w_n8_n5# pfet w=9 l=3
++  ad=0 pd=0 as=0 ps=0
+C0 gnd Gnd 7.14fF
+C1 out2 Gnd 4.32fF
+C2 out Gnd 17.26fF
+C3 b Gnd 9.46fF
+C4 a Gnd 9.96fF
+C5 Vdd Gnd 4.89fF
